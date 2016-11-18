@@ -1,0 +1,48 @@
+
+<head>
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400">
+  <script src="/assets/javascripts/index.js"></script>
+</head>
+
+
+  <div id="weather"></div>
+<body>
+    <div class="stats">
+      <div class="weather_icon">
+      </div>
+      <div class="skies"> <p style="font-family:bigJohn;font-size:21px">
+                              <%= @cdw.sky %></p> </div>
+      <div class="location"> <p> <%= @cdw.location %> </p> </div>
+      <div class="temp" style="font-size: 100px; font-family:slimJoe;font-weight:200">
+        <%= @cdw.temp %>°
+      </div>
+      <div id="more" style="font-family:Raleway;font-weight:100"> <p> Show more </p>
+
+      <div id="hidden">
+          <p> Chance of Rain </p>
+          <p> <%= @cdw.precipitation %> % </p>
+          <p> Wind Speed </p>
+          <p> <%= @cdw.wind %> mph</p>
+          <p> Humidity </p>
+          <p> <%= @cdw.humidity %> % </p>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="suggestions">
+      <p style="font-family:bigJohn;color:#3F4052;font-size:21px"> weather to wear </p>
+      <div class="grid">
+        <% tops=["shirt", "sweater", "jacket", "rainjacket", "parka"] %>
+        <% jeans=["shorts", "jeans", "jeans", "jeans", "jeans"] %>
+        <% shoes=["sandals", "sneakers", "sneakers", "rainboots", "snowboots"] %>
+        <div class="box"> <img src="scarf.png">  <div class="text_box"> Scarf </div> </div>
+        <div class="box"> <div class="text_box"> Boots </div> </div>
+        <div class="box"> <div class="text_box"> Jeans </div> </div>
+        <div class="box"> <div class="text_box"> Sweater </div> </div>
+        <div class="box"> <div class="text_box"> Gloves </div> </div>
+        <div class="box"> <div class="text_box"> Parka </div> </div>
+      </div>
+    </div>
+</body>
