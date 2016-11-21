@@ -69,15 +69,19 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   margin: 15px 15px 0px 0px;
   border-radius: 5%;
+  overflow:hidden;
 
 }
 
 img {
-  height: 80px;
+  width: 70px;
+  margin-left: -35px;
+  left: 50%;
   position:absolute;
-  margin: 0 auto;
+  /*margin: 0 auto;
   margin-top: 25px;
-  margin-left: 20px;
+  margin-left: 20px;*/
+  margin-top: 20px;
 }
 
 .text_box {
@@ -85,8 +89,7 @@ img {
   margin-top: 0px;
   width: 120px;
   height: 120px;
-  /*padding-top: 35px;
-  padding-bottom: 35px;*/
+  padding-top: 35px;
   background-color: rgba(255, 255, 255, 0.95);
   margin: 15px 15px 0px 0px;
   border-radius: 5%;
@@ -98,6 +101,11 @@ img {
 
 .box:hover .text_box {
   display: block;
+  background-color: white;
+}
+
+.box:hover {
+  background-color: white;
 }
 
 #more:hover #hidden {

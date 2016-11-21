@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/feedback_forms/new', to: 'feedback_forms#new'
   put 'create' => 'feedback_forms#create', as: 'create'
   patch 'update' => 'what_to_brings#update', as: 'update'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
