@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+
+
+DayWeather.create(date: 1001, temp: 65, sky: 'cloudy', precipitation: 2, wind: 10, humidity: 30, location: 'Berkeley')
